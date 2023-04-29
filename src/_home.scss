@@ -1,18 +1,17 @@
-
-.home-container{
+.home-container {
   background-color: black;
+  position: relative;
   width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
-  
-  .text-container{
+
+  .text-container {
     width: 80%;
     margin-top: 10rem;
 
-    
-    h2{
+    h2 {
       margin: 0%;
       padding: 0%;
       color: white;
@@ -20,18 +19,44 @@
       margin-top: 3rem;
     }
 
-    h1{
+    h1 {
       margin: 0%;
       font-size: 3.5rem;
       color: white;
-      span{
-        color: #CDCBF5;
+      span {
+        color: #cdcbf5;
       }
     }
-    
-    .hero-title{
+
+    .hero-title {
       margin-top: 3rem;
     }
+  }
 
+  .email {
+    color: white;
+    position: fixed;
+    top: 70%;
+    right: -5%;
+    rotate: 90deg;
+    font-weight: 400;
+  }
+
+  .contact-icons {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 70%;
+    left: 4%;
+
+    .linkedin{
+      margin-bottom: 1rem;
+    }
+
+    .linkedin, .github{
+      &:hover {
+        cursor: pointer;
+      }
+    }
   }
 }
