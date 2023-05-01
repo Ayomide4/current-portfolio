@@ -9,8 +9,9 @@ import {
   SiExpress,
 } from "react-icons/si";
 import { FaNodeJs, FaCss3 } from "react-icons/fa";
+import "../styles/_about.scss";
 
-export default function about() {
+export default function About() {
   return (
     <div className="about-container">
       <div className="content-container">
@@ -26,43 +27,43 @@ export default function about() {
           </p>
           <h2>Technologies I know:</h2>
           <ul className="grid-container">
-            <div className='grid-item'>
+            <div className="grid-item">
               <AiOutlineHtml5 size={36} />
               <li>HTML</li>
             </div>
-            <div className='grid-item'>
+            <div className="grid-item">
               <FaCss3 size={36} />
               <li>CSS</li>
             </div>
-            <div className='grid-item'>
+            <div className="grid-item">
               <SiJavascript size={36} />
               <li>Javascript</li>
             </div>
-            <div className='grid-item'>
+            <div className="grid-item">
               <SiTypescript size={36} />
               <li>Typescript</li>
             </div>
-            <div className='grid-item'>
+            <div className="grid-item">
               <SiMongodb size={36} />
               <li>MongoDB</li>
             </div>
-            <div className='grid-item'>
+            <div className="grid-item">
               <FaNodeJs size={36} />
               <li>Node</li>
             </div>
-            <div className='grid-item'>
+            <div className="grid-item">
               <SiExpress size={36} />
               <li>Express</li>
             </div>
-            <div className='grid-item'>
+            <div className="grid-item">
               <SiReact size={36} />
               <li>React</li>
             </div>
-            <div className='grid-item'>
+            <div className="grid-item">
               <SiSass size={36} />
               <li>SASS</li>
             </div>
-            <div className='grid-item'>
+            <div className="grid-item">
               <SiTailwindcss size={36} />
               <li>Tailwind</li>
             </div>

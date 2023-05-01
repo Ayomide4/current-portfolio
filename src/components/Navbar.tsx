@@ -1,3 +1,4 @@
+import '../styles/_navbar.scss'
 export default function Navbar() {
   return (
     <div className="navbar-container">
