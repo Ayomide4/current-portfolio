@@ -16,7 +16,7 @@ nav{
   height: 75px;
   z-index: 1;
   display: flex;
-  background-color: black;
+  background-color: #161616;
   opacity: 0.92;
   
   position: fixed;
@@ -69,5 +69,6 @@ nav ul li{
 
   span{
     color: #CDCBF5;
+    font-family: 'Roboto Mono', monospace;
   }
 }

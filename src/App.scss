@@ -1,11 +1,12 @@
 @import './navbar.scss';
 @import './home.scss';
+@import './about.scss';
 
 body{
   padding: 0;
   margin: 0;
   height: 200vh;
-  font-family: 'Roboto Mono', monospace;
-  background-color: black;
+  font-family: 'Inter', sans-serif;
+  background-color: #161616;
 }
 

@@ -7,8 +7,8 @@ export default function Home() {
     <div className="home-container">
       <div className="text-container">
         <h2>
-          I’m a software engineer who is passionate about creating great
-          products and loves earning new things.
+          I'm a software engineer who is passionate about creating great
+          products and loves learning new things.
         </h2>
         <div className="hero-title">
           <h1>
