@@ -1,5 +1,14 @@
 import '../styles/_navbar.scss'
+import  {Routes, Route, useNavigate} from 'react-router-dom';
 export default function Navbar() {
+
+  const navigate = useNavigate();
+
+  const navigateToHome = () => {
+    navigate('/')
+  }
+
+
   return (
     <div className="navbar-container">
       <nav>

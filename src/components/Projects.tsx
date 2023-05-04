@@ -11,24 +11,25 @@ export default function Projects() {
         <div className='project-grid'>
           
           <div className="project-item">
-            <div className='project'></div>
+            <div className='project '>
+              <div className='bug-tracker'></div>
+            </div>
             <div className='subtitle'>
               <h3>Bug Tracker</h3>
-              <VscGithubAlt size={22} color="white"/>
-              <BsBoxArrowUpRight size={22} color="white"/>
+              <BsBoxArrowUpRight className="box" size={20} color="white"/>
             </div>
           </div>
           <div className="project-item">
             <div className='project'></div>
-            <h3>Bug Tracker</h3>
+            <h3></h3>
           </div>
           <div className="project-item">
             <div className='project'></div>
-            <h3>Bug Tracker</h3>
+            <h3></h3>
           </div>
           <div className="project-item">
             <div className='project'></div>
-            <h3>Bug Tracker</h3>
+            <h3></h3>
           </div>
 
         </div>
