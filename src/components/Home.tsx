@@ -4,7 +4,7 @@ import { IconContext } from "react-icons";
 
 export default function Home() {
   return (
-    <div className="home-container">
+    <div className="home-container" id="home">
       <div className="text-container">
         <h2>
           I'm a software engineer who is passionate about creating great
@@ -22,8 +22,8 @@ export default function Home() {
         value={{ color: "white", className: "global-class-name" }}
       >
         <div className="contact-icons">
-          <AiOutlineLinkedin size={40} className="linkedin"/>
-          <AiOutlineGithub size={40} className="github"/>
+          <a href="https://www.linkedin.com/in/ayomide-omotosho-2069b7198/"><AiOutlineLinkedin size={40} className="linkedin"/></a>
+          <a href="https://github.com/Ayomide4"><AiOutlineGithub size={40} className="github"/></a>
         </div>
       </IconContext.Provider>
     </div>

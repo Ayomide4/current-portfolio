@@ -1,29 +1,33 @@
 import { AiOutlineHtml5 } from "react-icons/ai";
+import profile from "../assets/selfie2.jpg";
 import {
   SiJavascript,
   SiTypescript,
+  SiPython,
   SiMongodb,
   SiReact,
   SiSass,
   SiTailwindcss,
   SiExpress,
 } from "react-icons/si";
+import { DiJava } from "react-icons/di";
 import { FaNodeJs, FaCss3 } from "react-icons/fa";
 import "../styles/_about.scss";
 
 export default function About() {
   return (
-    <div className="about-container">
+    <div className="about-container" id="about">
       <div className="content-container">
         <div className="left-content">
           <h1>
             <span>01.</span> About Me
           </h1>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid
-            est in ipsa quidem vero facere alias cum laborum earum cupiditate
-            pariatur nulla asperiores nemo voluptate temporibus, non ullam
-            itaque quas!
+            I’m Ayomide Omotosho, a Nigerian American software developer. When
+            I’m not coding, I play bass and play/watch video games and anime. I
+            also love reading books and would appreciate any recommendations you
+            have! I’m passionate about learning and use a “learn by doing”
+            approach for most of my projects.
           </p>
           <h2>Technologies I know:</h2>
           <ul className="grid-container">
@@ -67,10 +71,23 @@ export default function About() {
               <SiTailwindcss size={36} />
               <li>Tailwind</li>
             </div>
+            <div className="grid-item">
+              <SiReact size={36} />
+              <li className="native-text">React Native</li>
+            </div>
+            <div className="grid-item">
+              <DiJava size={36} />
+              <li>Java</li>
+            </div>
+            <div className="grid-item">
+              <SiPython size={36} />
+              <li>Python</li>
+            </div>
           </ul>
         </div>
         <div className="right-content">
-          <img src="https://images.unsplash.com/photo-1682821890455-044ea43d8b57?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" />
+          {/* <img src="src/assets/selfie.jpg" /> */}
+          <img src={profile} />
         </div>
       </div>
     </div>

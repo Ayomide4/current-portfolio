@@ -1,26 +1,46 @@
-import '../styles/_navbar.scss'
-import  {Routes, Route, useNavigate} from 'react-router-dom';
+import "../styles/_navbar.scss";
+import { Link, animateScroll as scroll } from "react-scroll";
 export default function Navbar() {
-
-  const navigate = useNavigate();
-
-  const navigateToHome = () => {
-    navigate('/')
-  }
-
-
   return (
     <div className="navbar-container">
       <nav>
         <div className="elements">
-          <h2 className="home">Home</h2>
+          <h2 className="home" onClick={() => scroll.scrollToTop()}>
+            Home
+          </h2>
           <ul className="nav-items">
-            <li className="nav-element"><span>01.</span> About</li>
-            <li className="nav-element"><span>02.</span> Projects</li>
-            <li className="nav-element"><span>03.</span> Contact</li>
+            <Link
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-50}
+              duration={500}
+            >
+              <li className="nav-element">
+                <span>01.</span> About
+              </li>
+            </Link>
+            <Link
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={-50}
+              duration={500}
+            >
+              <li className="nav-element">
+                <span>02.</span> Projects
+              </li>
+            </Link>
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            ></Link>
           </ul>
         </div>
       </nav>
     </div>
-  )
+  );
 }
