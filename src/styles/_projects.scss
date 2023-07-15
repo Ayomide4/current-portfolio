@@ -33,6 +33,13 @@
     .project-item {
       height: 100%;
 
+      .show-desc {
+        background-color: red;
+        height: 100%;
+        width: 100%;
+        z-index: 100;
+      }
+
       .project {
         background-color: #cdcbf5;
         height: 90%;
@@ -40,22 +47,61 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        z-index: 1;
+        position: relative;
 
         &:hover {
           cursor: pointer;
         }
 
         &:hover > .bug-tracker,
-        &:hover > .chat-app {
+        &:hover > .login {
           transform: scale(1.1);
         }
       }
+
+      .overlay {
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.85;
+        z-index: 100;
+        border-radius: 14px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        transition: all 0.3s linear;
+
+        div {
+          width: 80%;
+          height: 80%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          p {
+            color: white;
+          }
+        }
+      }
+
       .bug-tracker {
         transition: all 0.5s ease;
         height: 80%;
         width: 85%;
         background-image: url(src/assets/bug-tracker-img.png);
         background-size: cover;
+        z-index: 1;
+      }
+
+      .noHoverBugTracker {
+        height: 80%;
+        width: 85%;
+        background-image: url(src/assets/bug-tracker-img.png);
+        background-size: cover;
+        z-index: 1;
+        pointer-events: none;
       }
 
       .login {
@@ -68,6 +114,16 @@
         background-repeat: no-repeat;
       }
 
+      .noHoverLogin {
+        margin-left: 40%;
+        height: 80%;
+        width: 85%;
+        background-image: url(src/assets/login.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        pointer-events: none;
+      }
+
       .subtitle {
         display: flex;
         align-items: center;
@@ -75,8 +131,18 @@
         width: 100%;
 
         .subtitle-left {
+          height: 40px;
+          width: 35%;
           display: flex;
           align-items: center;
+          .github {
+            margin-bottom: 6px;
+            margin-left: 10px;
+          }
+        }
+
+        .more {
+          cursor: pointer;
         }
 
         h3 {
