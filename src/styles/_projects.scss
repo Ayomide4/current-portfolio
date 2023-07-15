@@ -71,7 +71,13 @@
       .subtitle {
         display: flex;
         align-items: center;
-        width: 35%;
+        justify-content: space-between;
+        width: 100%;
+
+        .subtitle-left {
+          display: flex;
+          align-items: center;
+        }
 
         h3 {
           color: white;

@@ -1,5 +1,6 @@
 import "../styles/_projects.scss";
 import { BsBoxArrowUpRight } from "react-icons/bs";
+import { RiMore2Fill } from "react-icons/ri";
 
 export default function Projects() {
   return (
@@ -10,14 +11,18 @@ export default function Projects() {
         </h1>
 
         <div className="project-grid">
+          {/*TODO: make these clickable */}
           <div className="project-item">
             <div className="project">
               <div className="bug-tracker"></div>
             </div>
 
             <div className="subtitle">
-              <h3>Bug Tracker</h3>
-              <BsBoxArrowUpRight className="box" size={20} color="white" />
+              <div className="subtitle-left">
+                <h3>Bug Tracker</h3>
+                <BsBoxArrowUpRight className="box" size={20} color="white" />
+              </div>
+              <RiMore2Fill className="more" size={20} color="white" />
             </div>
           </div>
           <div className="project-item">
@@ -28,8 +33,11 @@ export default function Projects() {
             </div>
 
             <div className="subtitle">
-              <h3>Chat App</h3>
-              <BsBoxArrowUpRight className="box" size={20} color="white" />
+              <div className="subtitle-left">
+                <h3>Chat App</h3>
+                <BsBoxArrowUpRight className="box" size={20} color="white" />
+              </div>
+              <RiMore2Fill className="more" size={20} color="white" />
             </div>
           </div>
 
