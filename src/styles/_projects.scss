@@ -90,7 +90,7 @@
         transition: all 0.5s ease;
         height: 80%;
         width: 85%;
-        background-image: url(src/assets/bug-tracker-img.png);
+        background-image: url("src/assets/bug-tracker-img.png");
         background-size: cover;
         z-index: 1;
       }
@@ -98,7 +98,8 @@
       .noHoverBugTracker {
         height: 80%;
         width: 85%;
-        background-image: url(src/assets/bug-tracker-img.png);
+
+        background-image: url("src/assets/bug-tracker-img.png");
         background-size: cover;
         z-index: 1;
         pointer-events: none;
@@ -109,7 +110,7 @@
         margin-left: 40%;
         height: 80%;
         width: 85%;
-        background-image: url(src/assets/login.png);
+        background-image: url("src/assets/login.png");
         background-size: contain;
         background-repeat: no-repeat;
       }
@@ -118,7 +119,7 @@
         margin-left: 40%;
         height: 80%;
         width: 85%;
-        background-image: url(src/assets/login.png);
+        background-image: url("src/assets/login.png");
         background-size: contain;
         background-repeat: no-repeat;
         pointer-events: none;

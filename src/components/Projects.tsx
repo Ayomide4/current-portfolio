@@ -28,8 +28,6 @@ export default function Projects() {
         </h1>
 
         <div className="project-grid">
-          {/*TODO: make these clickable */}
-
           <div className="project-item">
             <div className="project ">
               {toggle && (
