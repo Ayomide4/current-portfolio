@@ -46,9 +46,13 @@ export default function Projects() {
             </div>
             <div className="subtitle">
               <div className="subtitle-left">
-                <h3>Bug Tracker</h3>
-                <BsBoxArrowUpRight className="box" size={20} color="white" />
-                <AiOutlineGithub className="github" size={24} color="white" />
+                <a>
+                  <h3>Bug Tracker</h3>
+                  <BsBoxArrowUpRight className="box" size={20} color="white" />
+                </a>
+                <a href="https://github.com/Ayomide4/bug-tracker">
+                  <AiOutlineGithub className="github" size={24} color="white" />
+                </a>
               </div>
               <RiMore2Fill
                 className="more"
@@ -72,8 +76,13 @@ export default function Projects() {
 
             <div className="subtitle">
               <div className="subtitle-left">
-                <h3>Chat App</h3>
-                <BsBoxArrowUpRight className="box" size={20} color="white" />
+                <a>
+                  <h3>Chat App</h3>
+                  <BsBoxArrowUpRight className="box" size={20} color="white" />
+                </a>
+                <a href="https://github.com/Ayomide4/current-portfolio">
+                  <AiOutlineGithub className="github" size={24} color="white" />
+                </a>
               </div>
               <RiMore2Fill
                 className="more"

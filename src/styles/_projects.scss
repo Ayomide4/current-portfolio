@@ -136,8 +136,13 @@
           display: flex;
           align-items: center;
           .github {
-            margin-bottom: 6px;
+            margin-bottom: 7px;
             margin-left: 10px;
+          }
+          a {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
           }
         }
 
