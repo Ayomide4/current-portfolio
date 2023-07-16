@@ -3,6 +3,8 @@ import "../styles/_projects.scss";
 import { BsBoxArrowUpRight } from "react-icons/bs";
 import { RiMore2Fill } from "react-icons/ri";
 import { AiOutlineGithub, AiOutlineYoutube } from "react-icons/ai";
+import bugImage from "../assets/bug-tracker-img.png";
+import chatImage from "../assets/login.png";
 
 export default function Projects() {
   const [toggle, setToggle] = useState(false);
@@ -40,7 +42,9 @@ export default function Projects() {
 
               <div
                 className={`${toggle ? "noHoverBugTracker" : "bug-tracker"}`}
-              ></div>
+              >
+                <img src={bugImage} alt="bug-tracker" />
+              </div>
             </div>
             <div className="subtitle">
               <div className="subtitle-left">
@@ -76,7 +80,9 @@ export default function Projects() {
                   </div>
                 </div>
               )}
-              <div className={`${toggleChat ? "noHoverLogin" : "login"}`}></div>
+              <div className={`${toggleChat ? "noHoverLogin" : "login"}`}>
+                <img src={chatImage} alt="chat" />
+              </div>
             </div>
 
             <div className="subtitle">
