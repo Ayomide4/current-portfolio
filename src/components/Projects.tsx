@@ -2,7 +2,7 @@ import { useState } from "react";
 import "../styles/_projects.scss";
 import { BsBoxArrowUpRight } from "react-icons/bs";
 import { RiMore2Fill } from "react-icons/ri";
-import { AiOutlineGithub } from "react-icons/ai";
+import { AiOutlineGithub, AiOutlineYoutube } from "react-icons/ai";
 
 export default function Projects() {
   const [toggle, setToggle] = useState(false);
@@ -53,6 +53,13 @@ export default function Projects() {
                 <a href="https://github.com/Ayomide4/bug-tracker">
                   <AiOutlineGithub className="github" size={24} color="white" />
                 </a>
+                <a href="https://youtu.be/5pqGUTb2sDg">
+                  <AiOutlineYoutube
+                    className="youtube"
+                    size={24}
+                    color="white"
+                  />
+                </a>
               </div>
               <RiMore2Fill
                 className="more"
@@ -76,12 +83,19 @@ export default function Projects() {
 
             <div className="subtitle">
               <div className="subtitle-left">
-                <a>
+                <a href="https://expo.dev/@ayo44/messaging-app">
                   <h3>Chat App</h3>
                   <BsBoxArrowUpRight className="box" size={20} color="white" />
                 </a>
                 <a href="https://github.com/Ayomide4/current-portfolio">
                   <AiOutlineGithub className="github" size={24} color="white" />
+                </a>
+                <a href="https://youtu.be/LpTWzOdj_rM">
+                  <AiOutlineYoutube
+                    className="youtube"
+                    size={24}
+                    color="white"
+                  />
                 </a>
               </div>
               <RiMore2Fill

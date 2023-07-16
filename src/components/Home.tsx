@@ -1,6 +1,7 @@
 import { AiOutlineLinkedin, AiOutlineGithub } from "react-icons/ai";
+import { BiFileBlank } from "react-icons/bi";
 import { IconContext } from "react-icons";
-
+import pdf from "../assets/Resume 2023.pdf";
 
 export default function Home() {
   return (
@@ -22,8 +23,15 @@ export default function Home() {
         value={{ color: "white", className: "global-class-name" }}
       >
         <div className="contact-icons">
-          <a href="https://www.linkedin.com/in/ayomide-omotosho-2069b7198/"><AiOutlineLinkedin size={40} className="linkedin"/></a>
-          <a href="https://github.com/Ayomide4"><AiOutlineGithub size={40} className="github"/></a>
+          <a href="https://www.linkedin.com/in/ayomide-omotosho-2069b7198/">
+            <AiOutlineLinkedin size={40} className="linkedin" />
+          </a>
+          <a href="https://github.com/Ayomide4">
+            <AiOutlineGithub size={40} className="github" />
+          </a>
+          <a href={pdf}>
+            <BiFileBlank size={40} className="resume" />
+          </a>
         </div>
       </IconContext.Provider>
     </div>
