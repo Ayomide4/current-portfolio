@@ -7,6 +7,10 @@
   align-items: center;
   flex-direction: column;
 
+  .profile {
+    display: none;
+  }
+
   .text-container {
     width: 80%;
     margin-top: 10rem;
@@ -73,6 +77,38 @@
 }
 @media screen and (max-width: 428px) {
   .home-container {
-    background-color: white;
+    padding: 0rem;
+    margin: 0rem;
+    .profile {
+      display: block;
+      width: 80%;
+      height: 100%;
+      margin-top: 2rem;
+    }
+  }
+
+  .text-container {
+    margin-top: 0rem;
+    padding: 0rem;
+
+    h2 {
+      font-size: 1.5rem;
+      display: none;
+    }
+
+    .hero-title {
+      .intro {
+        margin-bottom: 0.5rem;
+      }
+      h1 {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  .email,
+  .contact-icons {
+    display: none;
+    visibility: hidden;
   }
 }

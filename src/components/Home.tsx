@@ -2,6 +2,7 @@ import { AiOutlineLinkedin, AiOutlineGithub } from "react-icons/ai";
 import { BiFileBlank } from "react-icons/bi";
 import { IconContext } from "react-icons";
 import pdf from "../assets/Resume 2023.pdf";
+import profile from "../assets/selfie2.jpg";
 
 export default function Home() {
   return (
@@ -12,12 +13,13 @@ export default function Home() {
           products and loves learning new things.
         </h2>
         <div className="hero-title">
-          <h1>
+          <h1 className="intro">
             My name is <span>Ayo Omotosho</span>
           </h1>
           <h1> Front End Developer</h1>
         </div>
       </div>
+      <img src={profile} alt="profile" className="profile" />
       <h2 className="email">aomotosho4@gmail.com</h2>
       <IconContext.Provider
         value={{ color: "white", className: "global-class-name" }}
