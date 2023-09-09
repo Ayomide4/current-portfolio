@@ -48,7 +48,7 @@ export default function Projects() {
             </div>
             <div className="subtitle">
               <div className="subtitle-left">
-                <a>
+                <a href="https://bug-frontend-oj63.onrender.com">
                   <h3>Bug Tracker</h3>
                   <BsBoxArrowUpRight className="box" size={20} color="white" />
                 </a>
