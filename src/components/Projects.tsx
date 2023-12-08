@@ -9,7 +9,7 @@ import typingImage from "../assets/geckotype.png";
 import discord from "../assets/discord.png";
 
 export default function Projects() {
-  const [toggle, setToggle] = useState(false);
+  const [toggle] = useState(false);
   const [toggleChat, setToggleChat] = useState(false);
 
   const [projectItems, setProjectItems] = useState([
@@ -85,14 +85,6 @@ export default function Projects() {
             </div>
           ) : null}
 
-          {/*toggle && (
-            <div className="overlay">
-              <div>
-                <p>{item.description}</p>
-              </div>
-            </div>
-          )*/}
-
           <div className={`${toggle ? "noHoverBugTracker" : "bug-tracker"}`}>
             <img src={item.image} alt="bug-tracker" />
           </div>
@@ -114,7 +106,7 @@ export default function Projects() {
             className="more"
             size={20}
             color="white"
-            onClick={() => toggleOverlay(projectIndex, item)}
+            onClick={() => toggleOverlay(projectIndex)}
           />
         </div>
       </div>
