@@ -1,7 +1,8 @@
 import { AiOutlineHtml5 } from "react-icons/ai";
-import profile from "../assets/selfie2.jpg";
+import profile from "../assets/profile-image.jpg";
 import {
   SiJavascript,
+  SiMysql,
   SiTypescript,
   SiPython,
   SiMongodb,
@@ -22,13 +23,20 @@ export default function About() {
           <h1>
             <span>01.</span> About Me
           </h1>
-          <p>
-            I’m Ayomide Omotosho, a Nigerian American software developer. When
-            I’m not coding, I play bass and play/watch video games and anime. I
-            also love reading books and would appreciate any recommendations you
-            have! I’m passionate about learning and use a “learn by doing”
-            approach for most of my projects.
-          </p>
+
+          <div className="text-container">
+            <p>
+              My name is Ayomide Omotosho and I'm a Nigerian-American software
+              developer with a passion for coding and learning by doing.
+            </p>
+            <br />
+            <p>
+              Outside of programming, I enjoy playing bass, gaming, and diving
+              into a good book. I’m always open to new book recommendations!
+            </p>
+            <br />
+          </div>
+
           <h2>Technologies I know:</h2>
           <ul className="grid-container">
             <div className="grid-item">
@@ -44,6 +52,7 @@ export default function About() {
               <li>Javascript</li>
             </div>
             <div className="grid-item">
+              {" "}
               <SiTypescript size={36} />
               <li>Typescript</li>
             </div>
@@ -83,11 +92,15 @@ export default function About() {
               <SiPython size={36} />
               <li>Python</li>
             </div>
+            <div className="grid-item">
+              <SiMysql size={36} />
+              <li>MySql</li>
+            </div>
           </ul>
         </div>
         <div className="right-content">
           {/* <img src="src/assets/selfie.jpg" /> */}
-          <img src={profile} />
+          <img className="profile-image" src={profile} />
         </div>
       </div>
     </div>

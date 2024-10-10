@@ -7,6 +7,7 @@ import bugImage from "../assets/bug-tracker-img.png";
 import chatImage from "../assets/login.png";
 import typingImage from "../assets/geckotype.png";
 import discord from "../assets/discord.png";
+import laborhutt from "../assets/laborhutt.png";
 
 export default function Projects() {
   const [toggle] = useState(false);
@@ -15,6 +16,17 @@ export default function Projects() {
   const [projectItems, setProjectItems] = useState([
     {
       index: 0,
+      show: false,
+      title: "Laborhutt",
+      description:
+        "Use Laborhutt to find local neighbors with pickup trucks, box trucks and cargo vans to help you move large items.",
+      link: "https://www.laborhutt.com",
+      youtube: "",
+      github: "",
+      image: laborhutt,
+    },
+    {
+      index: 1,
       show: false,
       title: "Bug Tracker",
       description:
@@ -36,21 +48,7 @@ export default function Projects() {
       github: "https://github.com/Ayomide4/geckotype",
       image: typingImage,
     },
-
-    {
-      index: 2,
-      show: false,
-      title: "Discord Clone",
-      description:
-        "Full stack discord clone with voice/video chat using React, TypeScript, Vite and spring boot",
-      link: "",
-      github: "https://github.com/Ayomide4/discord-clone",
-      youtube: "",
-      image: discord,
-    },
   ]);
-
-  console.log(projectItems);
 
   const toggleOverlay = (projectIndex: number) => {
     setProjectItems((prevItems) => {
@@ -86,7 +84,9 @@ export default function Projects() {
           ) : null}
 
           <div className={`${toggle ? "noHoverBugTracker" : "bug-tracker"}`}>
-            <img src={item.image} alt="bug-tracker" />
+            <a href={item.link}>
+              <img src={item.image} alt="bug-tracker" />
+            </a>
           </div>
         </div>
         <div className="subtitle">

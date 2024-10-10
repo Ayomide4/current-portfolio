@@ -35,6 +35,13 @@
       font-size: 1.65rem;
       font-weight: 400;
     }
+    .text-container {
+      p {
+        font-size: 1.4rem;
+        margin: 0;
+        padding: 0;
+      }
+    }
 
     h2 {
       color: white;
@@ -76,7 +83,7 @@
   }
 }
 
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 576px) {
   .about-container {
     background-color: #1a191f;
     width: 100%;
