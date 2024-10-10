@@ -37,7 +37,7 @@ export default function Projects() {
     },
 
     {
-      index: 1,
+      index: 2,
       show: false,
       title: "geckotype",
       description:
