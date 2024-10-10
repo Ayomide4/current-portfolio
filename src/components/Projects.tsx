@@ -6,7 +6,6 @@ import { AiOutlineGithub, AiOutlineYoutube } from "react-icons/ai";
 import bugImage from "../assets/bug-tracker-img.png";
 import chatImage from "../assets/login.png";
 import typingImage from "../assets/geckotype.png";
-import discord from "../assets/discord.png";
 import laborhutt from "../assets/laborhutt.png";
 
 export default function Projects() {
