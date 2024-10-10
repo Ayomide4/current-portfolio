@@ -99,7 +99,6 @@ export default function About() {
           </ul>
         </div>
         <div className="right-content">
-          {/* <img src="src/assets/selfie.jpg" /> */}
           <img className="profile-image" src={profile} />
         </div>
       </div>

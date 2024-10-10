@@ -2,7 +2,7 @@ import { AiOutlineLinkedin, AiOutlineGithub } from "react-icons/ai";
 import { BiFileBlank } from "react-icons/bi";
 import { IconContext } from "react-icons";
 import pdf from "../assets/resume.pdf";
-import profile from "../assets/selfie2.jpg";
+import profile from "../assets/profile-image.jpg";
 
 export default function Home() {
   return (
