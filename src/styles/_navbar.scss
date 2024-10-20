@@ -26,6 +26,9 @@ nav {
   position: fixed;
   top: 0;
   @include flexCenter;
+  a {
+    text-decoration: none;
+  }
 
   .elements {
     @include flexCenter;

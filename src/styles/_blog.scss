@@ -1,0 +1,62 @@
+.blog-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+
+  .content-container {
+    width: 80%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      color: white;
+      font-size: 3rem;
+      margin-top: 6rem;
+      width: fit-content;
+
+      span {
+        color: #cdcbf5;
+        font-family: "Roboto Mono", monospace;
+      }
+    }
+
+    .list {
+      width: 100%;
+      height: 100%;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      overflow: scroll;
+      a {
+        text-decoration: none;
+        color: inherit;
+        .blog-item {
+          cursor: pointer;
+          display: flex;
+          margin-top: 1.5rem;
+          margin-bottom: 1.5rem;
+          .date {
+            color: #cdcbf5;
+            margin: 0 1rem 0 1rem;
+          }
+          .blog-item-header p {
+            color: white;
+            margin: 0;
+            padding: 0;
+          }
+          .blog-header-title {
+            font-weight: 800;
+
+            font-size: 1.25rem;
+          }
+          .blog-header-subtitle {
+            color: #c5c5c5;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

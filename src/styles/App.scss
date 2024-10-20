@@ -1,11 +1,12 @@
 @import "./navbar.scss";
 @import "./home.scss";
 @import "./about.scss";
+@import "./blogPost.scss";
+@import "./blog.scss";
 
 body {
   padding: 0;
   margin: 0;
-  height: 300vh;
   font-family: "Inter", sans-serif;
   background-color: #1a191f;
 }
