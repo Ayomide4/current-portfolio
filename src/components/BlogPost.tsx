@@ -6,6 +6,7 @@ function BlogPost() {
   // const { id } = useParams(); // Get the blog post ID from the URL
 
   useEffect(() => {
+    console.log("yo");
     fetch("/Why Reflection is Important.html")
       .then((res) => {
         if (!res.ok) {
