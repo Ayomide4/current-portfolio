@@ -44,7 +44,7 @@ goals, execution should focus on a small number of _wildly important goals_
 For example, I want to become a Software Engineer. There’s so much involved in
 reaching that goal: interview preparation, building projects, marketing myself, and
 developing the ability to learn quickly. It’s easy to feel crushed by the weight of it
-all, especially for someone without a degree. So what’s my approach? I identify a
+all. So what’s my approach? I identify a
 few attainable goals and focus deeply on one feature at a time during my work
 sessions. I also build my knowledge portfolio by reading and connecting ideas in
 Obsidian.
@@ -52,4 +52,3 @@ Obsidian.
 Everyone has off days—or even off weeks—I know I’ve had plenty. But I keep
 moving forward. I'll continue pushing because success is sequential, and I know
 that if I keep at it, I’ll get there one day.
-

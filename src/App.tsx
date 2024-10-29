@@ -4,8 +4,10 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Blog from "./components/Blog";
-import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import BlogPost from "./components/BlogPost";
+
+//TODO: - pass id properly to blog posts (see other todos)
 function App() {
   return (
     <>
@@ -23,7 +25,7 @@ function App() {
               </>
             }
           />
-          <Route path="/blog/1" element={<BlogPost />} />
+          <Route path="/blog/0" element={<BlogPost />} />
         </Routes>
       </Router>{" "}
     </>

@@ -1,14 +1,12 @@
-import { useParams } from "react-router-dom";
-
 import DOMPurify from "dompurify";
 import { useState, useEffect } from "react";
 
 function BlogPost() {
   const [content, setContent] = useState("");
-  const { id } = useParams(); // Get the blog post ID from the URL
+  // const { id } = useParams(); // Get the blog post ID from the URL
 
   useEffect(() => {
-    fetch("../../public/Why Reflection is Important.html")
+    fetch("/Why Reflection is Important.html")
       .then((res) => {
         if (!res.ok) {
           throw new Error("Network response was not ok");
