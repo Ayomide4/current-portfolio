@@ -7,7 +7,9 @@ import bugImage from "../assets/bug-tracker-img.png";
 import chatImage from "../assets/login.png";
 import typingImage from "../assets/geckotype.png";
 import laborhutt from "../assets/laborhutt.png";
+import laborhutt2 from "../assets/local-movers.png";
 
+//TODO: add laborhutt movers page with video and links
 export default function Projects() {
   const [toggle] = useState(false);
   const [toggleChat, setToggleChat] = useState(false);
@@ -27,6 +29,17 @@ export default function Projects() {
     {
       index: 1,
       show: false,
+      title: "Laborhutt Mover Registry",
+      description:
+        "A mover registry page that helps users filter and find furniture movers near them. Implemented programmatic SEO with NextJS's server side rendering, dynamic routing and metadata management",
+      link: "https://www.laborhutt.com/local-movers",
+      youtube: "https://komododecks.com/recordings/nEt5C1dA8ayV07uFMDt5",
+      github: "",
+      image: laborhutt2,
+    },
+    {
+      index: 2,
+      show: false,
       title: "Bug Tracker",
       description:
         "A bug tracker app that allows users to create, edit, and delete bugs. Users can also assign bugs to other users and change the status of the bug. The app uses React, Typescript, Tailwind, Node, Express, and MongoDB.",
@@ -37,7 +50,7 @@ export default function Projects() {
     },
 
     {
-      index: 2,
+      index: 3,
       show: false,
       title: "geckotype",
       description:
